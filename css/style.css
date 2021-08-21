@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    font-size: 115%;
+}
+
+/* Product Image */
+.product-image img{
+    width: 100%;
+}
+
+/* Product Derails */
+.product-details h1{
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Memory */
+.memory-category{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Storage */
+.storage-category{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Delivery */
+.delivery-category{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Margin of Memory, Storage and Delivery Section */
+.memory-container, .storage-container, .delivery-options-container {
+    margin-top: 50px;
+}
+
+/* Price Container */
+.price-container{
+    margin-top: 80px;
+}
+
+/* Submit Button */
+#submit-btn{
+    padding: 6px 12px;
+    border: 1px solid gray;
+}
+
+#submit-btn:hover{
+    background-color: #00c88f !important;
+    color: white !important;
+    transition: 1s !important;
+}
+

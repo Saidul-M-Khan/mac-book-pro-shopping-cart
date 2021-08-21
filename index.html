@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!-- Container -->
+        <section class="container my-5 mx-auto">
+            <div class="row">
+                <!-- Image -->
+                <div class="product-image col-md-6 col-12 mb-4">
+                    <img src="images/mac.png" alt="">
+                </div>
+                <!-- Product Details -->
+                <div class="product-details col-md-6 col-12">
+                    <div>
+                        <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                        <p style="margin-top: 15px;">Apple M1 chip with 8-core CPU with 4 performance cores and 4
+                            efficiency
+                            cores, 7-core GPU, and
+                            16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic
+                            Mouse Magic Keyboard - US English</p>
+                    </div>
+
+                    <!-- Memory Options -->
+                    <div class="memory-container">
+                        <h5 class="mt-5 fw-bold">Memory</h5>
+                        <div class="memory-category">
+                            <div>
+                                <button type="button" class="btn btn-outline-dark" onclick="memory8GB()">8GB unified
+                                    memory</button>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-outline-dark" onclick="memory16GB()">16GB unified
+                                    memory</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Storage Options -->
+                    <div class="storage-container">
+                        <h5 class="mt-5 fw-bold">Storage</h5>
+                        <div class="storage-category">
+                            <div>
+                                <button type="button" class="btn btn-outline-dark" onclick="storage256GB()">256GB SSD
+                                    storage</button>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-outline-dark" onclick="storage512GB()">512GB SSD
+                                    storage</button>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-outline-dark" onclick="storage1TB()">1TB SSD
+                                    storage</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Delivery Options -->
+                    <div class="delivery-options-container">
+                        <h5 class="mt-5 fw-bold">Choose your delivery option</h5>
+                        <div class="delivery-category">
+                            <div>
+                                <button type="button" class="btn btn-outline-dark" onclick="freeDelivery()">Friday, Aug
+                                    25
+                                    FREE Prime Delivery</button>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-outline-dark" onclick="paidDelivery()">Friday, Aug
+                                    21
+                                    Delivery charge $20</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="row">
+                        <div class="price-section col-lg-7 mt-2">
+                            <div class="price-container">
+                                <div class="py-4">
+                                    <ul class="list-unstyled mb-4">
+                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                                class="text-muted">Best Price </strong><strong>$<span>1299</span></strong>
+                                        </li>
+                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                                class="text-muted">Extra Memory Cost</strong><strong>$<span
+                                                    id="memory-cost">0</span></strong></li>
+                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                                class="text-muted">Extra Storage Cost</strong><strong>$<span
+                                                    id="storage-cost">0</span></strong></li>
+                                        <li class="d-flex justify-content-between py-3 border-bottom border-dark border-3">
+                                            <strong class="text-muted">Delivery Charge</strong><strong>$<span
+                                                    id="delivery-cost">0</span></strong></li>
+                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                                class="text-muted">Total Price</strong><strong>$<span
+                                                    id="total-cost">1299</span></strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <!-- Bonus: Promo Code -->
+                            <h6>Add Promo Code</h6>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-describedby="button-addon2" id="promo-input">
+                                <button class="btn btn-outline-secondary bg-danger text-white" type="button"
+                                    id="submit-btn">Apply</button>
+                                    <div><p id="message"></p></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="w-75 m-auto text-center">
+        <hr class="border border-top-1 border-secondary text-center m-3">
+        <h1>Total: $<span id="final-cost">1299</span></h1>
+    </footer>
+    <script src="js/interactive.js"></script>
+</body>
+
+</html>
